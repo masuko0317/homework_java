@@ -20,9 +20,9 @@ public class Homework14 {
 		System.out.println("期末試験" +exam2);
 		
 		
-		if (exam1 >= 75 && exam2 >=75 == true) {
+		if (exam1 >= 75 && exam2 >=75) {
 			System.out.println("合格");
-		}else if ((exam1 + exam2)>=140 == true){
+		}else if ((exam1 + exam2)>=140) {
 			System.out.println("合格");	
 		}else if (exam1 + exam2 >= 100 && (exam1 >= 90 || exam2 >= 90) == true) {
 			System.out.println("合格");

@@ -23,11 +23,11 @@ public class Homework17 {
 		
 		System.out.println("100から50までを表示");
 		
-		int k = 0;
+		int k = 100;
 		
-		while (100 + k >= 50)
+		while (k >= 50)
 		{
-			System.out.println(100 + k);
+			System.out.println(k);
 			k--;
 		}
 		//------------------------------------------------

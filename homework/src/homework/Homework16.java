@@ -19,8 +19,8 @@ public class Homework16 {
 		
 		System.out.println("10から0までを表示");
 		
-		for (int i = 0; i < 11; i++) {
-			System.out.println(10-i);
+		for (int i = 10; i >= 0; --i) {
+			System.out.println(i);
 		}
 		
 		
