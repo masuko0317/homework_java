@@ -1,5 +1,7 @@
 package homework;
 
+import java.util.Scanner;
+
 public class Homework13 {
 	public static void main(String[] args) {
 	
@@ -21,10 +23,13 @@ public class Homework13 {
 	 * }
 	 */
 		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("数字を2つ入力してください");
+		
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
 		
 		
-	
-	
 		
 	}
 }

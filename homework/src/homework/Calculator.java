@@ -1,6 +1,6 @@
 package homework;
 
-public class Calculater {
+public class Calculator {
 
 	/*
 	 * Mainクラス:

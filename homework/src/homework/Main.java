@@ -26,13 +26,13 @@ public class Main {
 		
 		System.out.println("3つの数字、"+num1 + "、" + num2 + "、" + num3 + "の");
 		
-		int total = Calculater.a(num1,num2,num3);
+		int total = Calculator.a(num1,num2,num3);
 		System.out.println("和は " + total);
 		
-		int max = Calculater.b(num1,num2,num3);
+		int max = Calculator.b(num1,num2,num3);
 		System.out.println("一番大きい数字は " + max);
 		
-		int min = Calculater.c(num1,num2,num3);
+		int min = Calculator.c(num1,num2,num3);
 		System.out.println("一番小さい数字は " + min);
 		
 		scan.close();
