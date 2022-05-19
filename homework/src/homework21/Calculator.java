@@ -30,7 +30,7 @@ public class Calculator {
 		static int balance;
 		
 		public static void setBalance(int price) {
-			Calculator.setBalance(10000);
+			balance = price;
 		}
 		
 		public static int deposit(int price) {

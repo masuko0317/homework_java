@@ -1,7 +1,7 @@
-package homework;
+package homework22;
 
-public class Homework22 {
-	public static void main(String[] args) {
+public class RobotWalk {
+	
 		/*
 		 * ・以下の仕様に基づいたクラスをmainとは別に作成してください。
 		 *　 ロボットの歩行プログラムを作成してください。
@@ -14,5 +14,7 @@ public class Homework22 {
 		 * ・⻄に1歩進むメソッドを作成。
 		 * ・現在の場所を表示するメソッドを作成
 		 */
-	}
+	
+	int x,y;
+	
 }
