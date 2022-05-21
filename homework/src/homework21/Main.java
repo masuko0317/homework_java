@@ -8,12 +8,9 @@ package homework21;
 			System.out.println("残高は" + t1.getBalance());
 			t1.payment(5000);//payment->支払い
 			System.out.println("残高は" + t1.getBalance());
-			t1.payment(20000); 
-			
-			/*
-			 * エラー処理を追加してください。(残高がありませんエラーを表示するように作成してください)
-			 */	
-			
-			
+			t1.payment(20000);
+			if(Calculator.a <= 0) {
+				System.out.println("残高がありません。");
+			}
 	}
 }

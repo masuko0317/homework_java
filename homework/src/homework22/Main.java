@@ -17,10 +17,28 @@ public class Main {
 		System.out.println("2:東へ進む。");
 		System.out.println("3:南へ進む。");
 		System.out.println("4:⻄へ進む。");
-		System.out.println("9:プログラムを終了 コードを入力してください>");
+		System.out.println("9:プログラムを終了");
+		System.out.println("コードを入力してください。");
+		
 		
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
 		
+		while(num == 0 && num == 1 && num == 2 && num == 3 && num == 4 && num == 9) {
+			if(num == 0) {
+				System.out.println(RobotWalk.position(RobotWalk.xy));
+			}else if(num == 1) {
+				RobotWalk.north(num);
+			}else if(num == 2) {
+				RobotWalk.south(num);
+			}else if(num == 3) {
+				RobotWalk.east(num);
+			}else if(num == 4) {
+				RobotWalk.west(num);	
+			}else if(num == 9) {
+				System.out.println("プログラム終了");
+				scan.close();
+			}
+		}
 	}
 }

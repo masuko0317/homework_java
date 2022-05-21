@@ -28,14 +28,15 @@ public class Calculator {
 		・処理内容:現在のbalanceの情報を表示する。
 	*/
 		static int balance;
-		
+		static int price;
+		static int a;
 		public static void setBalance(int price) {
 			balance = price;
 		}
 		
 		public static int deposit(int price) {
 			balance += price;
-			int a;
+			
 			if(balance >= 0) {
 				a = +1;
 				
@@ -48,7 +49,6 @@ public class Calculator {
 		
 		public static int payment(int price) {
 			balance -= price;
-			int a;
 			if(balance >= 0) {
 				a = +1;
 			}else {
