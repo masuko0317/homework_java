@@ -14,24 +14,25 @@ public class RobotWalk {
 		 * ・⻄に1歩進むメソッドを作成。
 		 * ・現在の場所を表示するメソッドを作成
 		 */
-	static int x = 0;
-	static int y = 0;
-	static int xy []={x,y};
+	
+	public static int x = 0;
+	public static int y = 0;
 		
-		public static int north(int num) {	
-			return y+=1;
-		}
-		public static int south(int num) {
-			return y-=1;
+		public static void north(int num) {	
+			y+=1;
+		} 
+		public static void south(int num) {
+			y-=1;
 		}			
-		public static int east(int num) {	
-			return x+=1;
+		public static void east(int num) {	
+			x+=1;
 		}			
-		public static int west(int num) {
-			return x-=1;
+		public static void west(int num) {
+			x-=1;
 		}		
-		public static int[] position(int[] num) {
-			return num;
+		public static int[] getCoordinate(int[] coordinate) {
+			int[] xy = {x,y};	
+			return xy;
 		}
 	}
 

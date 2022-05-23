@@ -23,21 +23,25 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
+		int[] coordinate = null;
 		
-		while(num == 0 && num == 1 && num == 2 && num == 3 && num == 4 && num == 9) {
+		while(true) {
 			if(num == 0) {
-				System.out.println(RobotWalk.position(RobotWalk.xy));
+				
+				RobotWalk.getCoordinate(coordinate);
+				System.out.println(coordinate);
 			}else if(num == 1) {
-				RobotWalk.north(num);
+				RobotWalk.north(1);
 			}else if(num == 2) {
-				RobotWalk.south(num);
+				RobotWalk.south(1);
 			}else if(num == 3) {
-				RobotWalk.east(num);
+				RobotWalk.east(1);
 			}else if(num == 4) {
-				RobotWalk.west(num);	
+				RobotWalk.west(1);	
 			}else if(num == 9) {
 				System.out.println("プログラム終了");
 				scan.close();
+				break;
 			}
 		}
 	}
