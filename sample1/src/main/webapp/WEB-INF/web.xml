@@ -10,6 +10,20 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <servlet>
+    <servlet-name>Morning</servlet-name>
+    <servlet-class>Morning</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>
+      Morning
+    </servlet-name>
+    <url-pattern>
+      /servlet/Morning
+    </url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
     <servlet-name>hello</servlet-name>
     <servlet-class>hello</servlet-class>
   </servlet>

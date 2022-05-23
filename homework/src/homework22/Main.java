@@ -20,29 +20,38 @@ public class Main {
 		System.out.println("9:プログラムを終了");
 		System.out.println("コードを入力してください。");
 		
+		int[] coordinate ;
 		
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		int[] coordinate = null;
 		
-		while(true) {
-			if(num == 0) {
-				
-				RobotWalk.getCoordinate(coordinate);
-				System.out.println(coordinate);
-			}else if(num == 1) {
-				RobotWalk.north(1);
-			}else if(num == 2) {
-				RobotWalk.south(1);
-			}else if(num == 3) {
-				RobotWalk.east(1);
-			}else if(num == 4) {
-				RobotWalk.west(1);	
-			}else if(num == 9) {
-				System.out.println("プログラム終了");
-				scan.close();
-				break;
+		while (true) {
+			
+			Scanner scan = new Scanner(System.in);
+			int num = scan.nextInt();
+			
+				if(num == 0) {	
+					coordinate = RobotWalk.getCoordinate();
+					System.out.println(coordinate);
+					continue;
+				}else if(num == 1) {
+					RobotWalk.north(1);
+					continue;
+				}else if(num == 2) {
+					RobotWalk.south(1);
+					continue;
+				}else if(num == 3) {
+					RobotWalk.east(1);
+					continue;
+				}else if(num == 4) {
+					RobotWalk.west(1);
+					continue;
+				}else if (num == 9) {
+					System.out.println("プログラムを終了しました。");
+					scan.close();
+					break;
+				}else {
+					System.out.println("有効な数字を入力してください。");	
+					continue;
+				}
 			}
 		}
 	}
-}

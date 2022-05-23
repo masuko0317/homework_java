@@ -30,9 +30,11 @@ public class RobotWalk {
 		public static void west(int num) {
 			x-=1;
 		}		
-		public static int[] getCoordinate(int[] coordinate) {
-			int[] xy = {x,y};	
-			return xy;
+		public static int[] getCoordinate() {
+			 int data[] = new int[2];
+			    data[0] = x;
+			    data[1] = y;
+			    return data;
 		}
 	}
 
