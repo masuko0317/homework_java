@@ -30,7 +30,7 @@ public class Main {
 			
 				if(num == 0) {	
 					coordinate = RobotWalk.getCoordinate();
-					System.out.println(coordinate);
+					System.out.println("(" + coordinate[0] + "," + coordinate[1] + ")");
 					continue;
 				}else if(num == 1) {
 					RobotWalk.north(1);
