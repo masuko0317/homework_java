@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class top
+ * Servlet implementation class profile
  */
-@WebServlet("/top")
-public class top extends HttpServlet {
+@WebServlet("/profile")
+public class profile extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public top() {
+    public profile() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,17 +30,16 @@ public class top extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setContentType("text/html");
-	    PrintWriter out = response.getWriter();
-	    out.println("<html>");
-	    out.println("<head>");
-	    out.println("<title></title>");
-	    out.println("</head>");
-	    out.println("<body>");
-	    out.println("<h1>Top画面です!</h1>");
-	    out.println("<button type=“button” onclick=\"http://localhost:8080/Websample2/home/profile'\">自己紹介へ</button>");
-	    out.println("</body>");
-	    out.println("</html>");
+		 PrintWriter out = response.getWriter();
+		    out.println("<html>");
+		    out.println("<head>");
+		    out.println("<title></title>");
+		    out.println("</head>");
+		    out.println("<body>");
+		    out.println("<h1>私の名前は増子玲央です。</h1>");
+		    out.println("<button type=“button” onclick=\"http://localhost:8080/Websample2/home/top'\">Top画面へ</button>");
+		    out.println("</body>");
+		    out.println("</html>");
 	}
 
 	/**
