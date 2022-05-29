@@ -28,9 +28,7 @@ public class top extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setContentType("text/html");
+		response.setContentType("text/html; charset=utf-8");
 	    PrintWriter out = response.getWriter();
 	    out.println("<html>");
 	    out.println("<head>");
@@ -38,7 +36,7 @@ public class top extends HttpServlet {
 	    out.println("</head>");
 	    out.println("<body>");
 	    out.println("<h1>Top画面です!</h1>");
-	    out.println("<button type=“button” onclick=\"http://localhost:8080/Websample2/home/profile'\">自己紹介へ</button>");
+	    out.println("<button onclick=\"http://localhost:8080/Websample2/home/profile/'\">自己紹介へ</button>");
 	    out.println("</body>");
 	    out.println("</html>");
 	}
