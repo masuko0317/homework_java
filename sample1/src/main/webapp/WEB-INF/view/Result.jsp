@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-hello world!
+こんにちは、<%= request.getAttribute("userName") %> さん！
+住所は <%= request.getAttribute("juusyo") %> です。
 </body>
 </html>

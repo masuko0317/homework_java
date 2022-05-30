@@ -5,7 +5,6 @@
     <head>
         <title>Reo's Portfolio</title>
         <meta charset="utf-8">
-        <meta description="">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -14,9 +13,9 @@
             <header>
                 <!-- PC用ナビゲーション -->
                 <nav id="nav-pc">
-                    <a href="introduction.html">Introduction</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="">Introduction</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
                 </nav>
             </header>
         </div>
@@ -34,9 +33,9 @@
             </article>
             <footer>
                 <div id="footer-link">
-                    <a href="introduction.html">Introduction</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="">Introduction</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
                 </div>
                 <span id="copylight">&copy;2022 M Reo All Rights Reserved.</span>
             </footer>

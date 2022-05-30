@@ -1,8 +1,8 @@
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class top
+ * Servlet implementation class result
  */
-@WebServlet("/top")
-public class top extends HttpServlet {
+@WebServlet("/result")
+public class result extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public top() {
+    public result() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,17 +28,12 @@ public class top extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html; charset=utf-8");
-	    PrintWriter out = response.getWriter();
-	    out.println("<html>");
-	    out.println("<head>");
-	    out.println("<title></title>");
-	    out.println("</head>");
-	    out.println("<body>");
-	    out.println("<h1>Top画面です!</h1>");
-	    out.println("<button onclick=\"location.href='http://localhost:8080/Websample2/home/profile'\">自己紹介へ</button>");
-	    out.println("</body>");
-	    out.println("</html>");
+		// TODO Auto-generated method stub
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		String view = "/WEB-INF/view/Result.jsp";
+	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+	    dispatcher.forward(request, response);
 	}
 
 	/**
@@ -46,6 +41,18 @@ public class top extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		// 文字コードの指定
+	    request.setCharacterEncoding("utf-8");
+	    // formから値を取得
+	    String name = request.getParameter("name");
+
+	    request.setAttribute("userName", name);
+	    
+	    String juusyo = request.getParameter("juusyo");
+	    
+	    request.setAttribute("juusyo", juusyo);
+	    
 		doGet(request, response);
 	}
 

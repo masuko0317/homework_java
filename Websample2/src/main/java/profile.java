@@ -36,7 +36,7 @@ public class profile extends HttpServlet {
 		    out.println("</head>");
 		    out.println("<body>");
 		    out.println("<h1>私の名前は増子玲央です。</h1>");
-		    out.println("<button onclick=\"http://localhost:8080/Websample2/home/top/'\">Topへ</button>");
+		    out.println("<button onclick=\"location.href='http://localhost:8080/Websample2/home/top'\">Topへ</button>");
 		    out.println("</body>");
 		    out.println("</html>");
 	}

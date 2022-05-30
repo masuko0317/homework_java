@@ -5,7 +5,6 @@
     <head>
         <title>Reo's Portfolio</title>
         <meta charset="utf-8">
-        <meta description="">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -14,9 +13,9 @@
             <header>
                 <!-- PC用ナビゲーション -->
                 <nav id="nav-pc">
-                    <a href="introduction.html">Introduction</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="">Introduction</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
                 </nav>
             </header>
             
@@ -29,12 +28,7 @@
             <article>
                 <section id="contact">
                     <h2 class="h2">お問い合わせ</h2>
-                    <form action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="text" name="honeypot" style="display:none">
-                        <input type="hidden" name="accessKey" value="92bbda07-3f1c-4ba9-9494-579fa96bbee2">
-                        <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました">
-                        <input type="hidden" name="replyTo" value="0317masuo@gmail.com">
-                        <input type="hidden" name="redirectTo" value="">     
+                    <form>   
                         <div>
                             <div id="contact-heading">
                                 <label class="contact-label">お名前</label>
@@ -73,15 +67,15 @@
                               <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
                             </div>
                         </div>
-                            <input type="image" value="Submit" src="images/button-submit.png" alt="送信する">
+                            <input type="image" value="Submit" src="" alt="送信する">
                     </form>
                 </section>
             </article>
             <footer>
                 <div id="footer-link">
-                    <a href="introduction.html">Introduction</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="">Introduction</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
                 </div>
                 <span id="copylight">&copy;2022 M Reo All Rights Reserved.</span>
             </footer>

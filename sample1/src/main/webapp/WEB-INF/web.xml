@@ -35,4 +35,17 @@
       /servlet/hello
     </url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>result</servlet-name>
+    <servlet-class>result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      result
+    </servlet-name>
+    <url-pattern>
+      /servlet/result
+    </url-pattern>
+  </servlet-mapping>
 </web-app>

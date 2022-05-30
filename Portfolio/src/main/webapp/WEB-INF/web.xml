@@ -22,4 +22,30 @@
   	portfolio
   	</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>contact</servlet-name>
+  	<servlet-class>contact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>
+  	contact
+  	</servlet-name>
+  	<url-pattern>
+  	contact
+  	</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>introduction</servlet-name>
+  	<servlet-class>introduction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>
+  	introduction
+  	</servlet-name>
+  	<url-pattern>
+  	introduction
+  	</url-pattern>
+  </servlet-mapping>
 </web-app>
