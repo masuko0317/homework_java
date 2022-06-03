@@ -9,4 +9,30 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>homework1</servlet-name>
+    <servlet-class>homework1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      homework1
+    </servlet-name>
+    <url-pattern>
+      homework1
+    </url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>result1</servlet-name>
+    <servlet-class>result1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      result1
+    </servlet-name>
+    <url-pattern>
+      result1
+    </url-pattern>
+  </servlet-mapping>
 </web-app>
