@@ -10,42 +10,42 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
-  <servlet>
-  	<servlet-name>portfolio</servlet-name>
-  	<servlet-class>portfolio</servlet-class>
+     <servlet>
+    <servlet-name>portfolio</servlet-name>
+    <servlet-class>portfolio</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>
-  	portfolio
-  	</servlet-name>
-  	<url-pattern>
-  	portfolio
-  	</url-pattern>
+    <servlet-name>
+      portfolio
+    </servlet-name>
+    <url-pattern>
+      portfolio
+    </url-pattern>
   </servlet-mapping>
   
-   <servlet>
-  	<servlet-name>contact</servlet-name>
-  	<servlet-class>contact</servlet-class>
+      <servlet>
+    <servlet-name>contact</servlet-name>
+    <servlet-class>contact</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>
-  	contact
-  	</servlet-name>
-  	<url-pattern>
-  	contact
-  	</url-pattern>
+    <servlet-name>
+      contact
+    </servlet-name>
+    <url-pattern>
+      contact
+    </url-pattern>
   </servlet-mapping>
   
-   <servlet>
-  	<servlet-name>introduction</servlet-name>
-  	<servlet-class>introduction</servlet-class>
+      <servlet>
+    <servlet-name>introduction</servlet-name>
+    <servlet-class>introduction</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>
-  	introduction
-  	</servlet-name>
-  	<url-pattern>
-  	introduction
-  	</url-pattern>
+    <servlet-name>
+      introduction
+    </servlet-name>
+    <url-pattern>
+      introduction
+    </url-pattern>
   </servlet-mapping>
 </web-app>

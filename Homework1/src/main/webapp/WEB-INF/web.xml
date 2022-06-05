@@ -35,4 +35,30 @@
       result1
     </url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>homework2</servlet-name>
+    <servlet-class>homework2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      homework2
+    </servlet-name>
+    <url-pattern>
+      homework2
+    </url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>result2</servlet-name>
+    <servlet-class>result2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      result2
+    </servlet-name>
+    <url-pattern>
+      result2
+    </url-pattern>
+  </servlet-mapping>
 </web-app>
