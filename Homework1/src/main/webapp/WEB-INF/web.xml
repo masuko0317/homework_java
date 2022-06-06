@@ -19,7 +19,7 @@
       homework1
     </servlet-name>
     <url-pattern>
-      homework1
+      /homework1
     </url-pattern>
   </servlet-mapping>
   
@@ -32,7 +32,7 @@
       result1
     </servlet-name>
     <url-pattern>
-      result1
+      /result1
     </url-pattern>
   </servlet-mapping>
   
@@ -45,7 +45,7 @@
       homework2
     </servlet-name>
     <url-pattern>
-      homework2
+      /homework2
     </url-pattern>
   </servlet-mapping>
   
@@ -58,7 +58,7 @@
       result2
     </servlet-name>
     <url-pattern>
-      result2
+      /result2
     </url-pattern>
   </servlet-mapping>
 </web-app>

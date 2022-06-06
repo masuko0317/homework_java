@@ -19,7 +19,7 @@
       portfolio
     </servlet-name>
     <url-pattern>
-      portfolio
+      /portfolio
     </url-pattern>
   </servlet-mapping>
   
@@ -32,7 +32,7 @@
       contact
     </servlet-name>
     <url-pattern>
-      contact
+      /contact
     </url-pattern>
   </servlet-mapping>
   
@@ -45,7 +45,7 @@
       introduction
     </servlet-name>
     <url-pattern>
-      introduction
+      /introduction
     </url-pattern>
   </servlet-mapping>
 </web-app>
