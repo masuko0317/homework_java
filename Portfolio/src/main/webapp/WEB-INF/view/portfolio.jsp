@@ -13,9 +13,9 @@
             <header>
                 <!-- PC用ナビゲーション -->
                 <nav id="nav-pc">
-                    <a href="">Introduction</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Contact</a>
+                    <a href="http://localhost:8080/Portfolio/introduction">Introduction</a>
+                    <a href="http://localhost:8080/Portfolio/portfolio">Portfolio</a>
+                    <a href="http://localhost:8080/Portfolio/contact">Contact</a>
                 </nav>
             </header>
         </div>
@@ -33,9 +33,9 @@
             </article>
             <footer>
                 <div id="footer-link">
-                    <a href="">Introduction</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Contact</a>
+                    <a href="http://localhost:8080/Portfolio/introduction">Introduction</a>
+                    <a href="http://localhost:8080/Portfolio/portfolio">Portfolio</a>
+                    <a href="http://localhost:8080/Portfolio/contact">Contact</a>
                 </div>
                 <span id="copylight">&copy;2022 M Reo All Rights Reserved.</span>
             </footer>
