@@ -2,6 +2,7 @@
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,7 +29,12 @@ public class Result2 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		String view = "/WEB-INF/lib/view/result2.jsp";
+	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+	    dispatcher.forward(request, response);
+		
 	}
 
 	/**
@@ -36,15 +42,17 @@ public class Result2 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		
 		
 		request.setCharacterEncoding("utf-8");
 		
-		String num = request.getParameter("name");
+		String num = request.getParameter("score");
 		  
 		int score = Integer.parseInt(num);
 		  
 		request.setAttribute("score",score );
+		
+		doGet(request, response);
 	}
 
 }

@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="./Result1">
+	<form method="post" action="./result1">
 		点数(1~100)を入力してください!!<input type="text" name="score">
-		<button onclick="location.href=http://localhost:8080/Homework1/result1" type="submit">送信</button>
+		<button type="submit">送信</button>
 	</form>
 </body>
 </html>

@@ -22,6 +22,6 @@
 	}else {%>
 		<p>0~100を入力してください</p>
 	<%} %>
-	<button onclick="location.href=http://localhost:8080/Homework1/homework1" type="submit">戻る</button>
+	<button onclick="location.href=http://localhost:8080/Homework1/homework1">戻る</button>
 	</body>
 </html>

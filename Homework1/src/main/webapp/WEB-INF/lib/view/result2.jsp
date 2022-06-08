@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%int num = (Integer)request.getAttribute("score"); %>
+<% int num = (Integer)request.getAttribute("score"); %>
 
 <p>1~<%= num %>までの合計値は</p>
 
@@ -21,6 +21,6 @@ while (+m != num){
 %>
 <p><%= n %></p>
 
-<button onclick="location.href=http://localhost:8080/Homework1/homework2" type="submit">戻る</button>
+<button onclick="location.href=http://localhost:8080/Homework1/homework2">戻る</button>
 </body>
 </html>

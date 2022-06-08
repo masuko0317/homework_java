@@ -9,7 +9,7 @@
 <body>
 	<form method="post" action="./Result2">
 		数字を入力してください<input type="text" name="score">
-		<button onclick="location.href=http://localhost:8080/Homework1/result2" type="submit">送信</button>
+		<button type="submit">送信</button>
 	</form>
 </body>
 </html>
