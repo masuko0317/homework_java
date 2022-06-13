@@ -31,7 +31,7 @@ public class Result1 extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		String view = "/WEB-INF/lib/view/result1.jsp";
+		String view = "/WEB-INF/view/result1.jsp";
 	    RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 	    dispatcher.forward(request, response);
 		
