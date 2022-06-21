@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -43,6 +42,17 @@ public class Result1 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
+		String msg="";
+	    try {
+		      Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+		      msg = "ドライバのロードに成功しました";
+		    }catch (ClassNotFoundException e){
+		    	System.out.println(e.getMessage());
+		      msg = "ドライバのロードに失敗しました1";
+		    }catch (Exception e){
+		      msg = "ドライバのロードに失敗しました2";
+		    }
+		System.out.println(msg);
 		
 		  request.setCharacterEncoding("utf-8");
 		  
