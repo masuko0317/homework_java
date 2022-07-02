@@ -62,4 +62,30 @@
     </url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>homework3</servlet-name>
+    <servlet-class>Homework3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      homework3
+    </servlet-name>
+    <url-pattern>
+      /homework3
+    </url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>result3</servlet-name>
+    <servlet-class>Result3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      result3
+    </servlet-name>
+    <url-pattern>
+      /result3
+    </url-pattern>
+  </servlet-mapping>
+  
 </web-app>

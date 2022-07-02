@@ -48,4 +48,17 @@
       /introduction
     </url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>contactresult</servlet-name>
+    <servlet-class>Contactresult</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>
+      Contactresult
+    </servlet-name>
+    <url-pattern>
+      /contactresult
+    </url-pattern>
+  </servlet-mapping>
 </web-app>

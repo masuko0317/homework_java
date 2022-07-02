@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* PC,スマホ共有スタイル */
+body {
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", "Meiryo", Arial, sans-serif;
+    background-color: azure;
+    /*width: 1450px;*/
+}
+
+p {
+    font-size: 18px;
+}
+
+/* =====
+PC用のスタイル
+======*/
+/*横幅設定*/
+ body {
+     /*height: 100vw;*/ /*高さを固定になるのでコメントアウト*/
+     margin: 0;
+     padding: 0;
+    }
+
+/* ヘッダー */
+ header {
+     /*position: absolute;*/ /*positionを固定にすると、そこからwidthを固定する必要があるのでコメントアウト*/
+     top: 10px;
+     border-width: 1px;
+     border-color: white;
+     border-style: solid;
+     background-color: rgba(135, 207, 235, 0.586);
+     /*width: 1450px;*/
+    }
+
+#header {
+     background-image: url(images/okinawasea.jpg); 
+     background-size: cover;
+     background-position: center top;
+     background-repeat: no-repeat;
+     /*min-width: 100vw;*/
+     min-height: 550px;
+     margin: 0;   
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+     /*width: 100%;*/
+     font-weight: bold;
+     text-align: right;
+     font-size: 25px;
+     padding-top: 18px;
+    }
+
+#nav-pc > a {
+    text-align: right;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+#nav-pc > a:link {
+    color: white;
+}
+#nav-pc > a:visited {
+    color: white;
+}
+#nav-pc > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+#nav-pc > a:active {
+    color: white;
+}
+
+/*見出しの背景装飾の設定 */
+#headline {
+    position: absolute;
+    top: 150px;
+    left: -60px;
+    background-color: rgba(197, 238, 255, 0.361);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+
+}
+/* 見出し */
+#headline  > h1 {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    color: skyblue;
+    font-size: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* 小見出し　(自己紹介　お問い合わせ) */
+.h2 {
+    font-size: 40px;
+    color: white;
+    background-color: skyblue;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+}  
+
+/* 自己紹介 */
+#introduction {
+    background-color: azure;
+    text-align: center;
+    padding-bottom: 50px;
+    width:100%;
+}
+
+.content{
+    display: flex; /*flex boxを使用して横並びに*/
+    align-items: center;
+    justify-content: center;
+}
+
+#introdcution .contact-itme{
+    width:100%;
+}
+
+#introduction-image {
+    border:1px black solid;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+#introduction-part > li {
+    text-align:left; /*左寄せにするために追加*/
+    list-style-type: disc;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left:30px;
+}
+
+/* コンタクト画面 */
+.contact-contents{
+    display: flex; /*flex boxを使用して横並びに*/
+    align-items: center;
+    justify-content: center;
+}
+.contact-heading{
+    text-align:left;
+    width: 100%;
+    max-width: 200px;
+}
+
+#contact {
+    width: 100%;
+    height: 650px;
+    background-color: aliceblue;
+}
+
+.contact-label {
+    display: block; 
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+ .contact-textbox {
+    width: 250px; /*入力内容の横幅は合わせた方が良い。そっちの方がデザイン的に綺麗です*/
+    height: 30px;
+    border: 1px rgb(0, 200, 255) solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contact-textarea {
+    width: 250px; /*入力内容の横幅は合わせた方が良い。そっちの方がデザイン的に綺麗です*/
+    height: 70px;
+    border: 1px rgb(0, 200, 255) solid;
+    border-radius: 5px;
+    margin-top: 10px;
+} 
+
+form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* フッター */
+footer {
+    /*width: 1450px;*/
+    height: 80px; /*150px→80pxを追加*/
+    background-color: skyblue;
+    text-align: center;
+}
+
+#footer-link {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top:10px; /*padding-top:10pxを追加*/
+}
+
+#footer-link > a {
+    text-decoration: none;
+}
+
+#footer-link > a:link {
+    color: azure;
+}
+
+#footer-link > a:visited {
+    color: azure;
+}
+
+#footer-link > a:hover {
+    color: azure;
+    text-decoration: underline;
+}
+
+#footer-link > a:active {
+    color: azure;
+}
+
+#copylight {
+    float: right;
+    padding-right: 10px; /*100px→10px*/
+    margin: 0;
+}
