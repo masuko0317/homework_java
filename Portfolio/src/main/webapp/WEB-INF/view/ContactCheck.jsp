@@ -2,7 +2,7 @@
     pageEncoding="UTF-8" import = "java.util.*,bean.ContactCheck"%>
     
     <%
-	List<Contact> list=(List<Contact>)request.getAttribute("Contacts");
+	List<ContactCheck> list=(List<ContactCheck>)request.getAttribute("Contacts");
 %>
     
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
    		 	<th>連絡方法</th>
   		</tr>
   		
-		<% for(Contact p:list){ %>
+		<% for(ContactCheck p:list){ %>
   			<tr>
 				<td><%=p.getName() %></td>
 				<td><%=p.getMail() %></td>

@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Reo's Portfolio</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Portfolio/src/main/css/style.css">
+        <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
     </head>
     <body>
         <!-- ヘッダー -->
@@ -28,7 +28,7 @@
             <article>
                 <section id="contact">
                     <h2 class="h2">お問い合わせ</h2>
-                    <form>   
+                    <form action="./contactresult" method="post">   
                         <div>
                             <div id="contact-heading">
                                 <label class="contact-label">お名前</label>
@@ -40,7 +40,7 @@
                                 <label class="contact-label">メールアドレス</label>
                             </div>
                             <div>
-                                <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                                <input type="text" name="mail" placeholder="入力してください" class="contact-textbox">
                             </div>
                             <div class="contact-heading">
                                 <label class="contact-label">電話番号</label>
@@ -54,7 +54,7 @@
                                 <label class="contact-label">お問い合わせ内容</label>
                             </div>
                             <div>
-                                <textarea class="contact-textarea" placeholder="入力してください" name="message"></textarea>
+                                <textarea class="contact-textarea" placeholder="入力してください" name="inquiry"></textarea>
                             </div>
                         </div>
                         <div>
@@ -62,12 +62,12 @@
                                 <label class="contact-label">ご連絡方法</label>
                             </div>
                             <div>
-                              <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
-                              <input class="radiobutton" type="radio" value="mail" name="contact"><label>メール</label>
-                              <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
+                              <input class="radiobutton" type="radio" value="1" name="method" checked><label>お電話</label>
+                              <input class="radiobutton" type="radio" value="2" name="method"><label>メール</label>
+                              <input class="radiobutton" type="radio" value="3" name="method"><label>どちらでも</label>
                             </div>
                         </div>
-                            <input type="image" value="Submit" src="" alt="送信する">
+                            <input type="submit" value="" src="" alt="送信する">
                     </form>
                 </section>
             </article>

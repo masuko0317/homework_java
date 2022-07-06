@@ -17,6 +17,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import bean.ContactCheck;
+
 /**
  * Servlet implementation class ContactCheck
  */
@@ -42,19 +44,19 @@ public class Contactresult extends HttpServlet {
 			
 			Statement stmt=con.createStatement(); 
 			
-			List<Contact> list = new ArrayList<Contact>();
+			List<ContactCheck> list = new ArrayList<ContactCheck>();
 			
 			ResultSet rs=stmt.executeQuery("select * from contact;");
 			
 			while (rs.next()) {
 	              
 	              String name = rs.getString("name");
-	              String mailaddress = rs.getString("mailaddress");
+	              String mailaddress = rs.getString("email");
 	              String tel = rs.getString("tel");
 	              String inquiry = rs.getString("inquiry");
 	              int method = rs.getInt("method");
 	              
-	              list.add(new Contact(name,mailaddress,tel,inquiry,method));
+	              list.add(new ContactCheck(name,mailaddress,tel,inquiry,method));
 	            }
 			
 			request.setAttribute("Contacts",list );
@@ -76,6 +78,8 @@ public class Contactresult extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		request.setCharacterEncoding("utf-8");
+		
 		String msg="";
 	    try {
 		      Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
@@ -96,6 +100,8 @@ public class Contactresult extends HttpServlet {
 		  
 		String num =request.getParameter("method");
 		
+		System.out.println(num);
+		
 		int method =Integer.parseInt(num);
 		
 		String inquiry =request.getParameter("inquiry");
@@ -103,9 +109,9 @@ public class Contactresult extends HttpServlet {
 		
 		  
 		  try {
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfolio","root","");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfoliodb","root","");
 		
-			String sql = "insert into contact(name,mailaddress,tel,inquiry,method)values(?,?,?,?,?)";
+			String sql = "insert into contact(name,email,tel,inquiry,method)values(?,?,?,?,?)";
 			
 			PreparedStatement st = con.prepareStatement(sql);
 			
