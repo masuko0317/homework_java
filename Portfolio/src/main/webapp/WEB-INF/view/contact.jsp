@@ -6,6 +6,7 @@
         <title>Reo's Portfolio</title>
         <meta charset="utf-8">
         <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
+        <script src="${pageContext.request.contextPath}/js/contact.js"></script>
     </head>
     <body>
         <!-- ヘッダー -->
@@ -67,7 +68,7 @@
                               <input class="radiobutton" type="radio" value="3" name="method"><label>どちらでも</label>
                             </div>
                         </div>
-                            <input type="submit" value="" src="" alt="送信する">
+                            <input type="submit" value="" src="${pageContext.request.contextPath}/imgs/button-submit.png" alt="送信する">
                     </form>
                 </section>
             </article>

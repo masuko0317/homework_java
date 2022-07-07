@@ -5,7 +5,7 @@
     <head>
         <title>Reo's Portfolio</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Portfolio/src/main/css/style.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
     </head>
     <body>
         <!-- ヘッダー -->

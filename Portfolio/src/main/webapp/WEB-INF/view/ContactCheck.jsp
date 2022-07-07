@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import = "java.util.*,bean.ContactCheck"%>
+
     
     <%
 	List<ContactCheck> list=(List<ContactCheck>)request.getAttribute("Contacts");
@@ -10,6 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
 <h1>この内容で送信されました。</h1>

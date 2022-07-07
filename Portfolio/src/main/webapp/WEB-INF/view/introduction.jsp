@@ -5,7 +5,7 @@
     <head>
         <title>Reo's Portfolio</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Portfolio/src/main/css/style.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
     </head>
     <body>
         <!-- ヘッダー -->
@@ -31,7 +31,7 @@
                 <!-- introduction メイン -->
                 <section id="introduction">
                     <h2 class="h2">自己紹介</h2>
-                    <img id="introduction-image" src="">
+                    <img id="introduction-image" src="${pageContext.request.contextPath}/imgs/icon.jpg">
                     <div id="introduction-part">
                         <h2>Reo</h2>
                         <li>2003/01/07生まれ 19歳</li>
