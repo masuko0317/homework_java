@@ -113,7 +113,9 @@ public class Contactresult extends HttpServlet {
 		
 			String sql = "insert into contact(name,email,tel,inquiry,method)values(?,?,?,?,?)";
 			
-			PreparedStatement st = con.prepareStatement(sql);
+			PreparedStatement st = con.prepareStatement(sql,java.sql.Statement.RETURN_GENERATED_KEYS);
+			
+			
 			
 			st.setString(1,name);
 			st.setString(2,mail);
@@ -121,8 +123,9 @@ public class Contactresult extends HttpServlet {
 			st.setString(4,inquiry);
 			st.setInt(5, method);
 			
+			//ResultSet res = st.getGeneratedKeys();
+			
 			int result = st.executeUpdate();
-			System.out.println(result);
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

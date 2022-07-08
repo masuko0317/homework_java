@@ -14,7 +14,8 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
-<h1>この内容で送信されました。</h1>
+<h1>送信されました。</h1>
+
 <table>
   		<tr>
     		<th>お名前</th>

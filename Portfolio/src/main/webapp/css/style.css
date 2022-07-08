@@ -32,7 +32,7 @@ PC用のスタイル
     }
 
 #header {
-     background-image: url(./imgs/okinawasea.jpg); 
+     background-image: url(../imgs/okinawasea.jpg); 
      background-size: cover;
      background-position: center top;
      background-repeat: no-repeat;
