@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" %>
+    
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +29,7 @@
         <main>
             <article>
                 <section id="contact">
-                    <h2 class="h2">お問い合わせ</h2>
+                    <h2 class="small-title">お問い合わせ</h2>
                     <form action="./contactresult" method="post">   
                         <div>
                             <div id="contact-heading">
@@ -68,7 +69,7 @@
                               <input class="radiobutton" type="radio" value="3" name="method"><label>どちらでも</label>
                             </div>
                         </div>
-                            <input type="submit" value="" src="${pageContext.request.contextPath}/imgs/button-submit.png" alt="送信する">
+                            <input  id="submit-btn" type="button" onclick="contact()" alt="送信する">
                     </form>
                 </section>
             </article>

@@ -27,20 +27,22 @@
         <main>
             <article>
 
-
                 <!-- introduction メイン -->
                 <section id="introduction">
-                    <h2 class="h2">自己紹介</h2>
-                    <img id="introduction-image" src="${pageContext.request.contextPath}/imgs/icon.jpg">
-                    <div id="introduction-part">
-                        <h2>Reo</h2>
-                        <li>2003/01/07生まれ 19歳</li>
-                        <li>音楽・読書・ゲーム・アニメが好き</li>
-                        <li>姉と弟がいる3人兄弟の2番目</li>
-                        <li>現在SAMURAI ENGINEERでプログラミングを学習中</li>
-                    </div>
+                	<h2 class="small-title">自己紹介</h2>
+                		<img id="introduction-image" src="${pageContext.request.contextPath}/imgs/icon.jpg">
+                		<h2>Reo</h2>
+                		<div id="introduction-frame">
+                			<ul id="intro-ul">
+                				<li class="intro-li">2003/01/07生まれ 19歳</li>
+                				<li class="intro-li">音楽・読書・ゲーム・アニメが好き</li>
+                				<li class="intro-li">姉と弟がいる3人兄弟の2番目</li>
+                				<li class="intro-li">現在SAMURAI ENGINEERでプログラミングを学習中</li>
+                			</ul>
+                		</div>
                 </section>
             </article>
+            
             <footer>
                 <div id="footer-link">
                     <a href="http://localhost:8080/Portfolio/introduction">Introduction</a>

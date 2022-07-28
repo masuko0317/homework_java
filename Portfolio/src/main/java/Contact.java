@@ -19,6 +19,8 @@ public class Contact extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());}
 		
+		response.setContentType("text/html; charset=UTF-8");
+		
 		String view = "WEB-INF/view/contact.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);

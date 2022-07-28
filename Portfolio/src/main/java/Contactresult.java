@@ -39,6 +39,8 @@ public class Contactresult extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
+		response.setContentType("text/html; charset=UTF-8");
+		
 		try {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfoliodb","root","");
 			
@@ -114,7 +116,6 @@ public class Contactresult extends HttpServlet {
 			String sql = "insert into contact(name,email,tel,inquiry,method)values(?,?,?,?,?)";
 			
 			PreparedStatement st = con.prepareStatement(sql,java.sql.Statement.RETURN_GENERATED_KEYS);
-			
 			
 			
 			st.setString(1,name);
