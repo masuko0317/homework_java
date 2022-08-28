@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>送信されました。</h1>
-
+<!--  
 <table>
   		<tr>
     		<th>お名前</th>
@@ -25,15 +25,16 @@
    		 	<th>連絡方法</th>
   		</tr>
   		
-		<% for(ContactCheck p:list){ %>
+		<% //for(ContactCheck p:list){ %>
   			<tr>
-				<td><%=p.getName() %></td>
-				<td><%=p.getMail() %></td>
-				<td><%=p.getTel() %></td>
-				<td><%=p.getInquiry() %></td>
-				<td><%=p.getMethod() %></td>
+				<td><%//=p.getName() %></td>
+				<td><%//=p.getMail() %></td>
+				<td><%//=p.getTel() %></td>
+				<td><%//=p.getInquiry() %></td>
+				<td><%//=p.getMethod() %></td>
 			</tr>
-		<%} %>
+		<%//} %>
 	</table>
+	-->
 </body>
 </html>

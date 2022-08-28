@@ -129,7 +129,9 @@ PC用のスタイル
 }
 
 #intro-ul {
-	text-align:left;/*左寄せにするために追加*/
+	display:inline-block;
+	text-align:left;
+	list-style-position: inside;
     padding: 10px;
     margin:30px;
 }
@@ -143,11 +145,6 @@ PC用のスタイル
     display: flex; /*flex boxを使用して横並びに*/
     align-items: center;
 }
-.contact-heading{
-    text-align:center;
-    width: 100%;
-    max-width: 200px;
-}
 
 #contact {
     width: 100%;
@@ -155,34 +152,45 @@ PC用のスタイル
     background-color: aliceblue;
 }
 
-.contact-label {
-	display: block;
+#contact-label {
     font-size: 18px;
-    margin-top: 10px;
+    margin:0px auto;
 }
 
- .contact-textbox {
+#contact-textbox {
     width: 250px; /*入力内容の横幅は合わせた方が良い。そっちの方がデザイン的に綺麗です*/
     height: 30px;
     border: 1px rgb(0, 200, 255) solid;
     border-radius: 5px;
-    margin-top: 10px;
+    margin:15px 0px;
 }
 
-.contact-textarea {
-    width: 250px; /*入力内容の横幅は合わせた方が良い。そっちの方がデザイン的に綺麗です*/
+#contact-textarea {
+    width: 250px; 
     height: 70px;
     border: 1px rgb(0, 200, 255) solid;
     border-radius: 5px;
     margin-top: 10px;
-} 
+}
 
-#submit-btn{
-	
-	border:0;
-	background:url(../imgs/button-submit.png) no-repeat;
-	width:300px;
-	height:300px;
+.submitbtn {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 31px;   /* 余白       */
+  background    : #00b7ff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #00b7ff;    /* 枠の指定 */
+  margin : 20px 0;
+}
+.submitbtn:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #00b7ff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
 
 form {

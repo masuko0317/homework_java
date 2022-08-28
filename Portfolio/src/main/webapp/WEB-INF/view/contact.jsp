@@ -30,46 +30,48 @@
             <article>
                 <section id="contact">
                     <h2 class="small-title">お問い合わせ</h2>
-                    <form action="./contactresult" method="post">   
+                    <form  name="contactform" action="./contactresult" method="post">   
                         <div>
-                            <div id="contact-heading">
-                                <label class="contact-label">お名前</label>
-                            </div>
-                            <div class="contact-form">
-                                <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
-                            </div>
-                            <div id="contact-heading">
-                                <label class="contact-label">メールアドレス</label>
+                            <div>
+                                <label id="contact-label">お名前</label>
                             </div>
                             <div>
-                                <input type="text" name="mail" placeholder="入力してください" class="contact-textbox">
-                            </div>
-                            <div class="contact-heading">
-                                <label class="contact-label">電話番号</label>
+                                <input type="text" name="name" placeholder="入力してください" id="contact-textbox">
                             </div>
                             <div>
-                                <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                                <label id="contact-label">メールアドレス</label>
+                            </div>
+                            <div>
+                                <input type="text" name="mail" placeholder="入力してください" id="contact-textbox">
+                            </div>
+                            <div>
+                                <label id="contact-label">電話番号</label>
+                            </div>
+                            <div>
+                                <input type="text" name="tel" placeholder="入力してください"  id="contact-textbox">
                             </div>
                         </div>
                         <div>
-                            <div class="contact-heading">
-                                <label class="contact-label">お問い合わせ内容</label>
+                            <div>
+                                <label id="contact-label">お問い合わせ内容</label>
                             </div>
                             <div>
-                                <textarea class="contact-textarea" placeholder="入力してください" name="inquiry"></textarea>
+                                <textarea id="contact-textarea" placeholder="入力してください" name="inquiry"></textarea>
                             </div>
                         </div>
                         <div>
-                            <div class="contact-heading">
-                                <label class="contact-label">ご連絡方法</label>
+                            <div>
+                                <label id="contact-label">ご連絡方法</label>
                             </div>
                             <div>
-                              <input class="radiobutton" type="radio" value="1" name="method" checked><label>お電話</label>
-                              <input class="radiobutton" type="radio" value="2" name="method"><label>メール</label>
-                              <input class="radiobutton" type="radio" value="3" name="method"><label>どちらでも</label>
+                              <input class="radiobutton" type="radio" value="1" name="method" checked><label>1.お電話</label>
+                              <input class="radiobutton" type="radio" value="2" name="method"><label>2.メール</label>
+                              <input class="radiobutton" type="radio" value="3" name="method"><label>3.どちらでも</label>
                             </div>
                         </div>
-                            <input  id="submit-btn" type="button" onclick="contact()" alt="送信する">
+                        <div>
+                            <input class="submitbtn" type="button" onclick="contact()" value="送信する">
+                        </div>
                     </form>
                 </section>
             </article>

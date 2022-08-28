@@ -21,5 +21,8 @@ submitBtn.addEventListener('click',() => {
     else if(text4=="") {
         alert("お問い合わせ内容を入力してください")
     }
-	},false
+    else{
+		document.contactform.submit();
+	}
+}
 );

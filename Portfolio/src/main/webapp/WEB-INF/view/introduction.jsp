@@ -37,7 +37,7 @@
                 				<li class="intro-li">2003/01/07生まれ 19歳</li>
                 				<li class="intro-li">音楽・読書・ゲーム・アニメが好き</li>
                 				<li class="intro-li">姉と弟がいる3人兄弟の2番目</li>
-                				<li class="intro-li">現在SAMURAI ENGINEERでプログラミングを学習中</li>
+                				<li class="intro-li">現在SAMURAI ENGINEERを卒業、就活の準備しながらプログラミングを学習中</li>
                 			</ul>
                 		</div>
                 </section>
